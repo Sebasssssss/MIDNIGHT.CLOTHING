@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'MIRAGE';
+  src: local('MIRAGE'),
+    url('../Fonts/MADE\ Mirage\ Regular\ PERSONAL\ USE.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'MIRAGE-THIN';
+  src: local('MIRAGE-THIN'),
+    url('../Fonts/MADE\ Mirage\ Thin\ PERSONAL\ USE.otf') format('opentype');
+}
+
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    white 0%,
+    white 33%,
+    #f0e9e1 33%,
+    #f0e9e1 100%
+  );
+}
