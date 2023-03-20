@@ -1,4 +1,5 @@
 import React from 'react'
+import Carousel from './components/Carousel'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 
@@ -13,12 +14,13 @@ function App() {
           </h1>
           <div className="z-10">
             <h1 className="text-[160px] text-text">clothing</h1>
-            <button
+            <a
+              href="#section"
               className="uppercase px-12 py-4 bg-brand text-[32px] text-textSecondary"
               style={{ fontFamily: 'MIRAGE-THIN' }}
             >
               shop now
-            </button>
+            </a>
           </div>
           <img
             src="../public/hero2.png"
@@ -26,7 +28,7 @@ function App() {
           />
         </div>
       </div>
-      <div className="w-full px-32 py-16 flex items-center gap-5">
+      <div id="section" className="w-full px-32 py-16 flex items-center gap-5">
         <div className="w-[400px] h-[550px] relative">
           <div
             className="bg-brand uppercase px-4 py-1 w-max text-textSecondary absolute top-5 left-0 text-[20px]"
@@ -96,6 +98,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Carousel />
       <Footer />
     </>
   )
