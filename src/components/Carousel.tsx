@@ -43,28 +43,28 @@ function Carousel() {
       className="py-8 mx-32 bg-tone4"
     >
       <SwiperSlide>
-        <Card />
+        <Card img="nike.png" />
       </SwiperSlide>
       <SwiperSlide>
-        <Card />
+        <Card img="nike2.png" />
       </SwiperSlide>
       <SwiperSlide>
-        <Card />
+        <Card img="nike3.png" />
       </SwiperSlide>
       <SwiperSlide>
-        <Card />
+        <Card img="nike4.png" />
       </SwiperSlide>
       <SwiperSlide>
-        <Card />
+        <Card img="nike5.png" />
       </SwiperSlide>
       <SwiperSlide>
-        <Card />
+        <Card img="nike.png" />
       </SwiperSlide>
       <SwiperSlide>
-        <Card />
+        <Card img="nike2.png" />
       </SwiperSlide>
       <SwiperSlide>
-        <Card />
+        <Card img="nike5.png" />
       </SwiperSlide>
     </Swiper>
   )

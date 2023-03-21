@@ -1,11 +1,11 @@
 import React from 'react'
 
-export default function Card() {
+export default function Card({ img }) {
   return (
     <div className="w-[300px] h-[420px] bg-tone3 relative flex flex-col justify-between">
       <div></div>
       <img
-        src="../../public/nike.png"
+        src={`../../public/${img}`}
         className="-rotate-[33deg] absolute -top-20 -left-5"
       />
       <div className="flex flex-col gap-4 items-center bg-white py-10">
