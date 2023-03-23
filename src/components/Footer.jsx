@@ -8,7 +8,7 @@ import Twitter from './Icons/Twitter'
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-secondary py-8 px-16">
+    <footer className="w-full bg-secondary py-8 px-16 mt-24">
       <div className="w-full border-b border-tone4 pb-4">
         <div className="inline-flex items-center justify-between w-full">
           <ul className="inline-flex items-center text-textSecondary gap-8">

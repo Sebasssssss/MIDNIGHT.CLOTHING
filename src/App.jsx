@@ -23,7 +23,7 @@ function App() {
             </a>
           </div>
           <img
-            src="../public/hero2.png"
+            src="../public/hero.png"
             className="object-cover absolute bottom-0 right-[64px] h-auto"
           />
         </div>

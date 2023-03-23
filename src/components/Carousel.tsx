@@ -40,10 +40,10 @@ function Carousel() {
           spaceBetween: 120
         }
       }}
-      className="py-8 mx-32 bg-tone4"
+      className="py-16 mx-32 bg-tone4"
     >
       <SwiperSlide>
-        <Card img="nike.png" />
+        <Card img="nike.png" sale={true} />
       </SwiperSlide>
       <SwiperSlide>
         <Card img="nike22.png" />
@@ -52,13 +52,13 @@ function Carousel() {
         <Card img="nike33.png" />
       </SwiperSlide>
       <SwiperSlide>
-        <Card img="nike44.png" />
+        <Card img="nike44.png" sale={true} />
       </SwiperSlide>
       <SwiperSlide>
         <Card img="nike55.png" />
       </SwiperSlide>
       <SwiperSlide>
-        <Card img="nike.png" />
+        <Card img="nike.png" sale={true} />
       </SwiperSlide>
       <SwiperSlide>
         <Card img="nike22.png" />
