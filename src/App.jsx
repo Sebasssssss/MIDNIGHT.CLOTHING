@@ -1,6 +1,7 @@
 import React from 'react'
 import Carousel from './components/Carousel'
 import Footer from './components/Footer'
+import ArrowForward from './components/Icons/ArrowForward'
 import Navbar from './components/Navbar'
 
 function App() {
@@ -71,11 +72,11 @@ function App() {
           className="bg-tone2 text-[48px] uppercase relative h-[383px]"
           style={{ fontFamily: 'MIRAGE' }}
         >
-          <div className="w-max p-16 text-left">
+          <div className="w-max p-16 text-left absolute right-8">
             <h1>men&apos;s</h1>
             <h1>clothes</h1>
-            <button className="text-[24px] bg-brand uppercase px-5 py-3 text-textSecondary">
-              see more -->
+            <button className="text-[24px] bg-brand uppercase px-5 py-3 text-textSecondary inline-flex items-center gap-2">
+              see more <ArrowForward />
             </button>
           </div>
           <div className="absolute -top-[120px] -left-12 w-[400px] h-auto">
@@ -89,8 +90,8 @@ function App() {
           <div className="w-max text-left p-16">
             <h1>women&apos;s</h1>
             <h1>clothes</h1>
-            <button className="text-[24px] bg-brand uppercase px-5 py-3 text-textSecondary">
-              see more -->
+            <button className="text-[24px] bg-brand uppercase px-5 py-3 text-textSecondary inline-flex items-center gap-2">
+              see more <ArrowForward />
             </button>
           </div>
           <div className="absolute -top-[170px] -right-12">
