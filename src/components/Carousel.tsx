@@ -46,25 +46,25 @@ function Carousel() {
         <Card img="nike.png" />
       </SwiperSlide>
       <SwiperSlide>
-        <Card img="nike2.png" />
+        <Card img="nike22.png" />
       </SwiperSlide>
       <SwiperSlide>
-        <Card img="nike3.png" />
+        <Card img="nike33.png" />
       </SwiperSlide>
       <SwiperSlide>
-        <Card img="nike4.png" />
+        <Card img="nike44.png" />
       </SwiperSlide>
       <SwiperSlide>
-        <Card img="nike5.png" />
+        <Card img="nike55.png" />
       </SwiperSlide>
       <SwiperSlide>
         <Card img="nike.png" />
       </SwiperSlide>
       <SwiperSlide>
-        <Card img="nike2.png" />
+        <Card img="nike22.png" />
       </SwiperSlide>
       <SwiperSlide>
-        <Card img="nike5.png" />
+        <Card img="nike55.png" />
       </SwiperSlide>
     </Swiper>
   )
