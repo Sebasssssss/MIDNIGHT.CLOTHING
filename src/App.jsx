@@ -1,4 +1,5 @@
 import React from 'react'
+import BigCarousel from './components/BigCarousel'
 import Carousel from './components/Carousel'
 import Footer from './components/Footer'
 import ArrowForward from './components/Icons/ArrowForward'
@@ -99,6 +100,7 @@ function App() {
           </div>
         </div>
       </div>
+      <BigCarousel />
       <Carousel />
       <Footer />
     </>

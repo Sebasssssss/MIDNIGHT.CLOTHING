@@ -7,7 +7,6 @@ import Search from './Icons/Search'
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false)
 
-  //navbar scroll changeBackground function
   const changeBackground = () => {
     console.log(window.scrollY)
     if (window.scrollY >= 66) {
@@ -19,14 +18,15 @@ export default function Navbar() {
 
   useEffect(() => {
     changeBackground()
-    // adding the event when scroll change background
     window.addEventListener('scroll', changeBackground)
   })
 
   return (
     <header
       className={`${
-        navbar ? 'bg-tone1' : 'bg-none'
+        navbar
+          ? 'bg-tone3/95 backdrop-blur-lg border-b border-tone4/50'
+          : 'bg-none'
       } fixed w-full top-0 z-10 transition-colors duration-500`}
     >
       <nav className="w-full inline-flex items-center justify-between px-[64px] py-[32px]">
