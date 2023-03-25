@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import Bag from './Icons/Bag'
 import Heart from './Icons/Heart'
 import Profile from './Icons/Profile'
@@ -30,14 +31,15 @@ export default function Navbar() {
       } fixed w-full top-0 z-10 transition-colors duration-500`}
     >
       <nav className="w-full inline-flex items-center justify-between px-[64px] py-[32px]">
-        <div
+        <Link
+          to="/"
           className={`${
             navbar ? 'text-textSecondary' : 'text-text'
           } text-[32px] transition-colors duration-500`}
           style={{ fontFamily: 'MIRAGE' }}
         >
           MIDNIGHT
-        </div>
+        </Link>
         <ul
           className={`${
             navbar ? 'text-textSecondary' : 'text-text'
