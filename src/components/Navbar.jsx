@@ -25,15 +25,24 @@ export default function Navbar() {
     <header
       className={`${
         navbar
-          ? 'bg-tone3/95 backdrop-blur-lg border-b border-tone4/50'
+          ? 'bg-secondary/95 backdrop-blur-lg border-b border-tone4/50'
           : 'bg-none'
       } fixed w-full top-0 z-10 transition-colors duration-500`}
     >
       <nav className="w-full inline-flex items-center justify-between px-[64px] py-[32px]">
-        <div className="text-[32px] text-text" style={{ fontFamily: 'MIRAGE' }}>
+        <div
+          className={`${
+            navbar ? 'text-textSecondary' : 'text-text'
+          } text-[32px] transition-colors duration-500`}
+          style={{ fontFamily: 'MIRAGE' }}
+        >
           MIDNIGHT
         </div>
-        <ul className="inline-flex items-center gap-4 text-text">
+        <ul
+          className={`${
+            navbar ? 'text-textSecondary' : 'text-text'
+          } inline-flex items-center gap-4 transition-colors duration-500`}
+        >
           <button>
             <Search />
           </button>
