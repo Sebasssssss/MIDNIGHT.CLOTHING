@@ -1,41 +1,42 @@
-import React, { useRef, useState } from 'react'
+import React, { useState, useRef } from 'react'
 import Search from './Icons/Search'
 
 export default function SearchForm() {
-  const [active, setActive] = useState(false)
+  const [focus, setFocus] = useState(false)
   const ref = useRef(null)
 
   const handleSubmit = e => {
     e.preventDefault()
   }
 
-  const handleClick = e => {
-    setActive(current => !current)
+  const handleFocus = () => {
+    ref.current.focus()
+    setFocus(current => !current)
   }
 
   return (
     <form
       onSubmit={handleSubmit}
-      className={`${
-        active ? 'bg-secondary text-textSecondary' : 'bg-transparent'
-      } inline-flex items-center gap-2 rounded transition-colors duration-300 px-2 py-1 hover:bg-tone2 hover:text-text`}
+      className="items-center gap-2 relative flex flex-col w-max"
     >
       <button
-        onClick={handleClick}
-        className={`${
-          active ? 'translate-x-0' : 'translate-x-[200px]'
-        } transition-transform duration-300`}
+        onClick={handleFocus}
         type="submit"
+        className={`${
+          focus
+            ? '-translate-x-[220px] text-textSecondary top-1'
+            : 'translate-x-0 top-0'
+        } z-10 absolute right-0 transition-transform duration-200`}
       >
-        <Search />
+        <Search className={`${focus ? 'w-6 h-6' : null}`} />
       </button>
       <input
-        placeholder="Search Products"
+        ref={ref}
+        onBlur={() => setFocus(false)}
+        placeholder="Search Movie"
         className={`${
-          active
-            ? 'visible opacity-100 duration-500'
-            : 'invisible opacity-0 duration-100'
-        } bg-transparent outline-none transition-all`}
+          focus ? 'opacity-100' : 'opacity-0'
+        } bg-transparent focus:shadow-search focus:border-[#EB454F] w-[150px] focus:w-[250px] focus:bg-zinc-900 focus:text-white rounded-full focus:pl-8 box-border py-1 outline-none placeholder:text-[#58586a] transition-all duration-200`}
       />
     </form>
   )
