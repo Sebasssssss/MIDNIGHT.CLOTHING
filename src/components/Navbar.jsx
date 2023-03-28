@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Bag from './Icons/Bag'
 import Heart from './Icons/Heart'
 import Profile from './Icons/Profile'
-import Search from './Icons/Search'
+import SearchForm from './SearchForm'
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false)
@@ -46,7 +46,7 @@ export default function Navbar() {
           } inline-flex items-center gap-4 transition-colors duration-500`}
         >
           <button>
-            <Search />
+            <SearchForm />
           </button>
           <button>
             <Profile />
