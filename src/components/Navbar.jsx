@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Bag from './Icons/Bag'
 import Heart from './Icons/Heart'
 import Profile from './Icons/Profile'
+import LikedProducts from './LikedProducts'
 import SearchForm from './SearchForm'
 
 export default function Navbar() {
@@ -52,7 +53,7 @@ export default function Navbar() {
             <Profile />
           </button>
           <button>
-            <Heart />
+            <LikedProducts />
           </button>
           <button>
             <Bag />

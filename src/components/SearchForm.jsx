@@ -28,7 +28,7 @@ export default function SearchForm() {
             : 'translate-x-0 top-0'
         } z-10 absolute right-0 transition-transform duration-200`}
       >
-        <Search className={`${focus ? 'w-6 h-6' : null}`} />
+        <Search className={`${focus ? 'w-[24px] h-[24px]' : null}`} />
       </button>
       <input
         ref={ref}
