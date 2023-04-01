@@ -37,7 +37,7 @@ export default function LikedProducts() {
         </li>
       </ul>
       {active ? (
-        <div className="absolute top-4 right-4 bg-white shadow-2xl w-[350px] p-4 z-10">
+        <div className="absolute top-8 right-4 bg-white shadow-2xl w-[350px] p-4 z-10">
           {likedItems.map(({ title, price, image, id }) => {
             return (
               <div
