@@ -28,7 +28,7 @@ export default function Footer() {
           >
             MIDNIGHT
           </h1>
-          <div className="invisible">PAYPAL</div>
+          <div className="invisible">PAYMENT METHODS</div>
         </div>
       </div>
       <div className="inline-flex items-center gap-32 py-8 w-full justify-center text-textSecondary">
