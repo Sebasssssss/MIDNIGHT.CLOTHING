@@ -49,13 +49,13 @@ export default function Navbar() {
           <button>
             <SearchForm />
           </button>
-          <button>
+          <button className="hover:opacity-70 active:text-tone4">
             <Profile />
           </button>
           <button>
             <LikedProducts />
           </button>
-          <button>
+          <button className="hover:opacity-70 active:text-tone4">
             <Bag />
           </button>
         </ul>

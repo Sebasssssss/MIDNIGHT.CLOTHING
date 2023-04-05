@@ -29,7 +29,7 @@ export default function LikedProducts() {
   return (
     <div className="relative">
       <div onClick={() => setActive(current => !current)}>
-        <Heart />
+        <Heart className="hover:opacity-70 active:text-tone4" />
       </div>
       <ul className="absolute -top-1 -right-1">
         <li className="rounded-full bg-white px-1.5 text-sm text-text">
@@ -42,7 +42,7 @@ export default function LikedProducts() {
             return (
               <div
                 key={id}
-                className="grid grid-cols-3 gap-2 place-items-center border-b"
+                className="grid grid-cols-3 gap-2 place-items-center border-b hover:bg-tone2"
               >
                 <img src={`../../public/${image}`} className="w-24" />
                 <div className="text-text text-left">
