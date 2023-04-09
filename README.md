@@ -17,7 +17,7 @@ $PROJECT_ROOT
 │   # React component files
 ├── components
 │   # Services
-├── emailjs
+├── services
 │   # Static files for images and 3d model file
 └── public
 ```
