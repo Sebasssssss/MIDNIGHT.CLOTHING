@@ -19,7 +19,7 @@ $PROJECT_ROOT
 │   # Services
 ├── services
 │   # Static files for images and 3d model file
-└── public
+└── assets
 ```
 
 ## License
