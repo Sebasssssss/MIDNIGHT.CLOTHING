@@ -24,11 +24,11 @@ export default function SearchForm() {
         type="submit"
         className={`${
           focus
-            ? '-translate-x-[220px] text-textSecondary top-1'
+            ? '-translate-x-[220px] text-textSecondary top-0'
             : 'translate-x-0 top-0'
         } z-10 absolute right-0 transition-transform duration-200`}
       >
-        <Search className={`${focus ? 'w-[24px] h-[24px]' : null}`} />
+        <Search />
       </button>
       <input
         ref={ref}
