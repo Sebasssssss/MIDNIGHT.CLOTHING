@@ -15,27 +15,27 @@ function Carousel() {
       navigation={true}
       modules={[Navigation]}
       breakpoints={{
-        '320': {
+        320: {
           slidesPerView: 1,
           spaceBetween: 40
         },
-        '640': {
+        640: {
           slidesPerView: 2,
           spaceBetween: 40
         },
-        '768': {
+        768: {
           slidesPerView: 2,
           spaceBetween: 20
         },
-        '1000': {
+        1000: {
           slidesPerView: 3,
           spaceBetween: 40
         },
-        '1250': {
+        1250: {
           slidesPerView: 4,
           spaceBetween: 50
         },
-        '1420': {
+        1420: {
           slidesPerView: 4,
           spaceBetween: 120
         }
